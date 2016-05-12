@@ -38,7 +38,14 @@
         </activity>
         <provider
             android:authorities="com.tifaniwarnita.sunshine"
-            android:name=".data.WeatherProvider" />
+            android:name=".data.WeatherProvider"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="com.myapp.LICENSE_TO_KILL" />
     </application>
+    
+    <permission android:name="com.myapp.LICENSE_TO_KILL"
+        android:protectionLevel="dangerous"
+        android:label="Licenced to Kill" />
 
 </manifest>
